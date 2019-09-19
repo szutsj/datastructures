@@ -8,15 +8,15 @@ public class SelectionSort {
     int length = array.length();
     int min = 0;
     
-    for (int outter = 0; outter < length - 1; outter++){
-      min = outter;
-      for (int inner = outter + 1; inner < length; inner++) {
+    for (int outer = 0; outer < length - 1; outer++){
+      min = outer;
+      for (int inner = outer + 1; inner < length; inner++) {
         if (array.get(inner) < array.get(min)) {
           min = inner;
         }
       }
-      if (min != outter){
-        array.swap(min, outter);
+      if (min != outer){
+        array.swap(min, outer);
       }
     }
   }
